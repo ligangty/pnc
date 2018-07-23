@@ -74,6 +74,12 @@
     <dependency>
       <groupId>org.jboss.pnc</groupId>
       <artifactId>maven-repository-manager</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.commonjava.cdi.util</groupId>
+          <artifactId>weft</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.jboss.pnc</groupId>
